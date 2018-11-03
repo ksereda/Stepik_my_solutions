@@ -72,6 +72,5 @@ public class Pair<X, Y> {
         System.out.println(mustBeTrue);
         System.out.println(mustAlsoBeTrue);
     }
-
 }
 
