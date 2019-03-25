@@ -1,4 +1,4 @@
-package collections_6_2.task_2;
+package module_6_2.task_2;
 
 import java.util.LinkedList;
 import java.util.Scanner;

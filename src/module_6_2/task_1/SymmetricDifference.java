@@ -1,4 +1,4 @@
-package collections_6_2.task_1;
+package module_6_2.task_1;
 
 import java.util.*;
 

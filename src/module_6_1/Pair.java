@@ -1,4 +1,4 @@
-package lesson_6.generics_6_1;
+package module_6_1;
 
 import java.util.Objects;
 
