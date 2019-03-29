@@ -1,6 +1,7 @@
 package module_6_2.task_2;
 
 import java.util.LinkedList;
+import java.util.ArrayDeque;
 import java.util.Scanner;
 import java.util.Deque;
 
@@ -20,6 +21,12 @@ Sample Output:
 
 public class Main {
 
+    public static void main(String[] args) {
+        test();
+        test2();
+    }
+
+    // Solution 1
     public static void test() {
 
         Deque<Integer> q = new LinkedList<>();
@@ -38,9 +45,24 @@ public class Main {
 
     }
 
-    public static void main(String[] args) {
-        test();
+    // Solution 2
+    public static void test2() {
+
+        ArrayDeque<Integer> q = new ArrayDeque<>();
+        Scanner scanner = new Scanner(System.in);
+
+        while (scanner.hasNext()) {
+            scanner.nextInt();
+
+            if (scanner.hasNext()) {
+                q.addFirst(scanner.nextInt());
+            }
+
+        }
+
+        q.forEach(x-> System.out.print(x + " "));
     }
+
 }
 
 
