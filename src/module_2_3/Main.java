@@ -18,9 +18,21 @@ package module_2_3;
 
 public class Main {
 
+    // Solution 1
     public static boolean isPalindrome(String text) {
         String result = text.replaceAll("[^A-Za-z1-9]+", "");
         return (new StringBuilder(result)).reverse().toString().equalsIgnoreCase(result);
+    }
+
+    // Solution 2
+    public static boolean isPalindrome2(String s) {
+
+        StringBuilder mainString = new StringBuilder();
+        s.chars().filter(Character::isLetterOrDigit).map(Character::toLowerCase).forEach(mainString::appendCodePoint);
+        StringBuilder reverseString = new StringBuilder(mainString).reverse();
+
+        return reverseString.toString().equals(mainString.toString());
+
     }
 
 }
